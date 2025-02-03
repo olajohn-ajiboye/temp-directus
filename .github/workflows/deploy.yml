@@ -28,7 +28,8 @@ jobs:
         uses: google-github-actions/auth@v2
         with:
           token_format: access_token
-          workload_identity_provider: projects/328749435709/locations/global/workloadIdentityPools
+          workload_identity_provider: projects/328749435709/locations/global/workloadIdentityPools/github-tracker/providers/github-action-provider
+
           service_account: google-cloud-storage@pick-safe.iam.gserviceaccount.com
       
       - name: Login to Artifact Registry
