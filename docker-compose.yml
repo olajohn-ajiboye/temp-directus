@@ -1,0 +1,27 @@
+version: "3"
+services:
+  directus:
+    image: directus/directus:11.3.5
+    ports:
+      - 8055:8055
+    volumes:
+      - ./database:/directus/database
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
+      - ./keys:/directus/keys
+    environment:
+      SECRET: 5YYifC4o|0E[Imd5MPVE=O{cJihF>
+      ADMIN_EMAIL: admin@giritoday.com
+      ADMIN_PASSWORD: d1r3ctu5
+      DB_CLIENT: pg
+      DB_CONNECTION_STRING: postgres://ufdhgu4a0uvomj:p336ff9fb20bb454fd7e2ce84819f6edd82d16918fbf4677dc2fc1d20949d8f11@cb5ajfjosdpmil.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d4kms30euve7b6?sslmode=require
+      NODE_TLS_REJECT_UNAUTHORIZED: 0
+      WEBSOCKETS_ENABLED: true
+      STORAGE_LOCATIONS: gcs
+      STORAGE_GCS_BUCKET: directus_cms_staging
+      STORAGE_GCS_DRIVER: gcs
+      STORAGE_GCS_KEY_FILENAME: /keys/gcs.json
+      CONTENT_SECURITY_POLICY_DIRECTIVES__IMG_SRC: "'self' data: blob: https:"
+      FILE_MIME_TYPE_ALLOWED: image/jpeg,image/png,image/webp,image/gif,image/svg+xml
+      SHARP_IGNORE_GLOBAL: true
+      

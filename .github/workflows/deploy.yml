@@ -1,0 +1,56 @@
+name: Deploy to GCP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  PROJECT_ID: pick-safe
+  REGION: us-central1
+  REPOSITORY: directus-cms
+  IMAGE: directus-app
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Google Auth
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          token_format: access_token
+          workload_identity_provider: projects/328749435709/locations/global/workloadIdentityPools
+          service_account: google-cloud-storage@pick-safe.iam.gserviceaccount.com
+      
+      - name: Login to Artifact Registry
+        uses: docker/login-action@v3
+        with:
+          registry: us-central1-docker.pkg.dev
+          username: oauth2accesstoken
+          password: ${{ steps.auth.outputs.access_token }}
+
+
+      - name: Build and push Docker image
+        run: |
+          docker build -t us-central1-docker.pkg.dev/pick-safe/directus-cms/directus-app:${{ github.sha }} .
+          docker push us-central1-docker.pkg.dev/pick-safe-staging/directus-cms/directus-app:${{ github.sha }}
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy directus-cms \
+            --image us-central1-docker.pkg.dev/pick-safe/directus-cms/directus-app:${{ github.sha }} \
+            --project pick-safe \
+            --region us-central1 \
+            --platform managed \
+            --allow-unauthenticated \
+            --port 8055 \
+            --memory 1Gi
