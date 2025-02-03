@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "pick-safe",
+    "private_key_id": "62063a58e18935dc287f54e011241cb3d059e6fd",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDeTf9s/HNPRyqH\nQya1SQ5VQ6kUqTIQ1c5OE7XZhO1KGwY+iXfyKcGKqhQXzaPQtMo4CBBJzb7vzVBC\n0XOHm9P2+UG9ShT3q+iIKDLoq/NJBfv+gaGP0Zlng90s20TZ/XeGyIYyGsVqgP4H\nAvsIBMRtlsvoUec4ZhEhdSXn/YA4km6n0l/NjKUyI1HG+HVytNe3IninSBcVN+Kc\nOphQlTKKSDyosfoCD/reLcNpOZXdCrc6C45nMDSHNaIQddBMeN36vPQF2JSyTBF3\nDX15nX535W67sGYQ9jIRH78HWnmtIHnJ/L78XX+xrvqb//qTHmEuRKahiRGExhK2\nTDAHRr1RAgMBAAECggEAA/wu9i5dB3tK8mDMSqypbUgzZD5COlYIMZMd4UKGRHFR\nPoFqsonNa+XE9XDyHQAuAyzLKfTeauBp2MDLdY9gEInYWViAzA3QsybRVCVyTN6m\nwqG37+LogUK2Y3hMzCxEiRiC0Kwf2jBqHV26z/fR6PWukxbAx9yLNb0qtaAa59NY\n9RlHngAT4b2IcQXCNmV3yQ1S5Ax1cUAZCED6tuxF2dGJxUkYEeOhQEGJwGSSskRA\nc7fDMw3nu5xxw99d2VAgbOR+lvyWVd3NfK49KyGO+b5opUTEX2CObLL1hLGS7p1m\nPOOp3crHD8vTU9eDZVZzGCd8AJoFEJgqhEtHbSMFDwKBgQD1EosT8jq1j54wUgLe\nAjKk9Q/QcKXpz9igjGUHAggYx4oBLM3jSEKxk+SHIlS4C8dfUmFw84MCteLdRJ9A\ndR9gobqhlm2AkLhF/mGsHrqt/7Jy3xmfpp2x+HEw63j6rruppaa7O2Py1nEeJhVs\nnP0L/Iw76aLJV8SYKnYG3vOO8wKBgQDoN5CS3lQIJvzK5p/6HaqB0Pm4OIS5vJe+\nC3lBk1a13lUAgcR87RMX/wvk4F9YUGJ0tgt2k/CStVtUixeYFRgaYQ15qXNvHalK\nS3F9KerRM+AYg3xOLIyfWKAgSek0SM7kMuJlyJs631Vwvl4QaLVXGK5AEC6NoDCh\nahHaxFr7qwKBgQDcliVC/dvkQnIDUj4scFP/cGkcl9hu3NtCnzvsE+MP0sMgDaEA\nO7F0PwcKr1cMFeYNoYv9a+H3VZnuye6BySpGAyyGd2z2tMx4i+CEWWB0b1vC05cv\nwXvdjh7sBnbtRMu7hlPN4UY0dNp6ZZMRITkPSfE7mC8jBXH5+PYldxZJCwKBgQDN\nr1HWVSl3Yxksm2R+BULe43wdaapeXibGBaGsrNX0F2+RGGAzC0aLTbR6UScCsYjT\nud+jc1x2hj7UPrNyWNTVoLtv1ODTPiGSFgr7A2LjVKCc9fHnyFvyVGzYzL7MOeVP\niaaw4yRj3Cfwyh3FSQm+kLTfN7YUahxJDQuti5jPKwKBgQC9Vi0wYmGVib3oN7tG\ne+3mXV9DgIXhk8vSRR12tC1NuxVWEq+BiCs1AxOxCOzJIN7jmSAYnrf4LooxF6tU\nrXpNaQpTXo0Ds/aS8gNSmvhkESEil/ttgggq4hRZvqQxQAAzr45Wc3elLcsQgjRX\nw8BRxJY+5rTSov0U08cbZHe+Ug==\n-----END PRIVATE KEY-----\n",
+    "client_email": "google-cloud-storage@pick-safe.iam.gserviceaccount.com",
+    "client_id": "110783703318053135515",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-cloud-storage%40pick-safe.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
